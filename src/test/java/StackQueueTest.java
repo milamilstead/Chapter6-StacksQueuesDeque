@@ -1,7 +1,6 @@
 //import org.desu.answermap.AnswerMap;
 import org.desu.ch6stackqueue.Queue;
 import org.desu.ch6stackqueue.Stack;
-import org.desu.linkedlistbook.StackTestLinkedList;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
