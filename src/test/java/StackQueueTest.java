@@ -1,6 +1,7 @@
 import org.desu.answermap.AnswerMap;
 import org.desu.ch6stackqueue.Queue;
 import org.desu.ch6stackqueue.Stack;
+import org.desu.linkedlistbook.StackTestLinkedList;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -48,7 +49,7 @@ class StackQueueTest {
     @Test
     void test3() {
         Queue<Integer> testQueue;
-        testQueue = QueueTestArray.test();
+        testQueue = queueTestArray.test();
         System.out.println("\nFinal queue in dequeue order is: ");
         ArrayList<Integer> queueList = new ArrayList<>();
         while (!(testQueue.isEmpty())) {
