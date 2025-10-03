@@ -1,5 +1,4 @@
 
-
 import org.desu.ch6stackqueue.LinkedStack;
 import org.desu.ch6stackqueue.Stack;
 
