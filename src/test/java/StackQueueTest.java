@@ -1,4 +1,4 @@
-import org.desu.answermap.AnswerMap;
+//import org.desu.answermap.AnswerMap;
 import org.desu.ch6stackqueue.Queue;
 import org.desu.ch6stackqueue.Stack;
 import org.desu.linkedlistbook.StackTestLinkedList;
@@ -49,13 +49,12 @@ class StackQueueTest {
     @Test
     void test3() {
         Queue<Integer> testQueue;
-        testQueue = queueTestArray.test();
+        testQueue = QueueTestArray.test();  // Fix capitalization
         System.out.println("\nFinal queue in dequeue order is: ");
         ArrayList<Integer> queueList = new ArrayList<>();
-        while (!(testQueue.isEmpty())) {
+        while (!testQueue.isEmpty()) {
             queueList.add(testQueue.dequeue());
         }
-        // Now convert to String
         String queueString = queueList.toString();
         System.out.println("\nFinal queue is: " + queueString);
         Assertions.assertEquals(queueString, "[7, 9, 4]");
