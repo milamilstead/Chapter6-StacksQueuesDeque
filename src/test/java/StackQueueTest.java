@@ -48,12 +48,13 @@ class StackQueueTest {
     @Test
     void test3() {
         Queue<Integer> testQueue;
-        testQueue = QueueTestArray.test();  // Fix capitalization
+        testQueue = QueueTestArray.test();
         System.out.println("\nFinal queue in dequeue order is: ");
         ArrayList<Integer> queueList = new ArrayList<>();
-        while (!testQueue.isEmpty()) {
+        while (!(testQueue.isEmpty())) {
             queueList.add(testQueue.dequeue());
         }
+        // Now convert to String
         String queueString = queueList.toString();
         System.out.println("\nFinal queue is: " + queueString);
         Assertions.assertEquals(queueString, "[7, 9, 4]");

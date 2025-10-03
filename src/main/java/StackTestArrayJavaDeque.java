@@ -7,7 +7,7 @@ public class StackTestArrayJavaDeque {
     // Test method using ArrayDeque as a stack
     public static ArrayDeque<Integer> test() {
         ArrayDeque<Integer> S = new ArrayDeque<>();  // contents: ()
-        S.push(5);                              // contents: (5)
+        S.push(6);                              // contents: (5)
         S.push(3);                              // contents: (5, 3)
         S.pop();                               // removes 3, contents: (5)
         S.push(7);                              // contents: (5, 7)
@@ -15,7 +15,7 @@ public class StackTestArrayJavaDeque {
         S.push(9);                              // contents: (5, 9)
         S.push(1);                              // contents: (5, 9, 1)
         S.pop();                               // removes 1, contents: (5, 9)
-        S.push(2);                              // contents: (5, 9, 2)
+        S.push(7);                              // contents: (5, 9, 2)
         S.push(8);                              // contents: (5, 9, 2, 8)
         S.pop();                               // removes 8, contents: (5, 9, 2)
         return S;

@@ -16,10 +16,10 @@ public class QueueTestLinkedList {
         S.enqueue(7);      // contents: (3, 7)
         S.dequeue();       // removes 3, contents: (7)
         S.enqueue(9);      // contents: (7, 9)
-        S.enqueue(1);      // contents: (7, 9, 1)
+        S.enqueue(7);      // contents: (7, 9, 1)
         S.dequeue();       // removes 7, contents: (9, 1)
-        S.enqueue(2);      // contents: (9, 1, 2)
-        S.enqueue(8);      // contents: (9, 1, 2, 8)
+        S.enqueue(9);      // contents: (9, 1, 2)
+        S.enqueue(4);      // contents: (9, 1, 2, 8)
         S.dequeue();       // removes 9, contents: (1, 2, 8)
         return S;
     }
